@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: app-role
@@ -12,7 +12,6 @@ rules:
   - extensions
   - policy
   - rbac.authorization.k8s.io
-
   resources:
   - pods
   - componentstatuses
